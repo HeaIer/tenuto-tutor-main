@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.library.LearnerActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="28dp">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="458dp"
+        android:layout_height="304dp"
+        app:srcCompat="@drawable/pngegg"
+        tools:layout_editor_absoluteX="-15dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/learner_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nbold"
+        android:text="Settings"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toTopOf="@id/learner_nor_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/learner_nor_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nm"
+        android:text="Number of repeats"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/learner_title"
+        app:layout_constraintBottom_toTopOf="@id/learner_nor_value"/>
+
+    <TextView
+        android:id="@+id/learner_nor_value"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:fontFamily="@font/nm"
+        android:text="5"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/learner_dop_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/learner_nor_title" />
+
+    <ImageView
+        android:id="@+id/learner_nor_right"
+        android:layout_width="57dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:clickable="true"
+        android:src="@drawable/right"
+        app:layout_constraintStart_toEndOf="@id/learner_nor_value"
+        app:layout_constraintTop_toBottomOf="@id/learner_nor_title" />
+
+    <ImageView
+        android:id="@+id/learner_nor_left"
+        android:layout_width="61dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:clickable="true"
+        android:src="@drawable/left"
+        app:layout_constraintEnd_toStartOf="@id/learner_nor_value"
+        app:layout_constraintTop_toBottomOf="@id/learner_nor_title" />
+
+    <TextView
+        android:id="@+id/learner_dop_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nm"
+        android:text="Duration of the part (bars)"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/learner_nor_value"
+        app:layout_constraintBottom_toTopOf="@id/learner_dop_value"
+        />
+
+    <TextView
+        android:id="@+id/learner_dop_value"
+        android:layout_width="22dp"
+        android:layout_height="45dp"
+        android:fontFamily="@font/nm"
+        android:text="2"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/setvalue_nor_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/learner_dop_title" />
+
+    <ImageView
+        android:id="@+id/learner_dop_right"
+        android:layout_width="61dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:clickable="true"
+        android:src="@drawable/right"
+        app:layout_constraintStart_toEndOf="@id/learner_dop_value"
+        app:layout_constraintTop_toBottomOf="@id/learner_dop_title" />
+
+    <ImageView
+        android:id="@+id/learner_dop_left"
+        android:layout_width="61dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:clickable="true"
+        android:src="@drawable/left"
+        app:layout_constraintEnd_toStartOf="@id/learner_dop_value"
+        app:layout_constraintTop_toBottomOf="@id/learner_dop_title" />
+
+    <TextView
+        android:id="@+id/setvalue_nor_title"
+        android:layout_width="117dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/nm"
+        android:text="BPM(Speed)"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/setvalue_nor_value3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/learner_dop_value" />
+
+    <TextView
+        android:id="@+id/setvalue_nor_value3"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:fontFamily="@font/nm"
+        android:gravity="center"
+        android:text="120"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/learner_proceed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setvalue_nor_title"/>
+
+    <ImageView
+        android:id="@+id/setvalue_nor_right2"
+        android:layout_width="61dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:clickable="true"
+        android:src="@drawable/right"
+        app:layout_constraintStart_toEndOf="@+id/setvalue_nor_value3"
+        app:layout_constraintTop_toBottomOf="@+id/learner_dop_right" />
+
+    <ImageView
+        android:id="@+id/setvalue_nor_left2"
+        android:layout_width="61dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="20dp"
+        android:clickable="true"
+        android:src="@drawable/left"
+        app:layout_constraintEnd_toStartOf="@+id/setvalue_nor_value3"
+        app:layout_constraintTop_toBottomOf="@+id/learner_dop_left" />
+
+    <Button
+        android:id="@+id/learner_proceed"
+        android:layout_width="133dp"
+        android:layout_height="46dp"
+        android:fontFamily="@font/nbold"
+        android:text="Proceed"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setvalue_nor_value3"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

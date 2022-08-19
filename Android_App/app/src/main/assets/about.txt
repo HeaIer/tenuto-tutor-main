@@ -1,0 +1,2 @@
+Tenuto Tutor is an assistive device you can attach to your current keyboard and can play any song you can find online. It has multiple solenoids, one to press each key, all controlled by an Arduino chip. It has different modes to perform by itself or assist you while you learn. The Tutor app allows the users to upload their own MIDI files, select the mode and control the playback and educational process. Learner mode allows the student to repeat bars after they have been played and provides feedback on the student’s performance.
+
